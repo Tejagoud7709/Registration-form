@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Register</h1>
+    <form action="/register" method="POST">
+      
+      <!-- First Name Input -->
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+      </div>
+      
+      <!-- Last Name Input -->
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+      </div>
+      
+      <!-- Email Input -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+      
+      <!-- Password Input -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+      </div>
+      
+      <!-- Confirm Password Input -->
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+      </div>
+
+      <!-- Gender Selection -->
+      <div class="gender-container">
+        <div class="gender-label">Gender:</div>
+        <label for="male">
+          <input type="radio" id="male" name="gender" value="male"> Male
+        </label>
+        <label for="female">
+          <input type="radio" id="female" name="gender" value="female"> Female
+        </label>
+      </div>
+
+      <!-- Date of Birth Input -->
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+
+      <!-- Country Selection -->
+      <div class="form-group">
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+          <option value="USA">USA</option>
+          <option value="India">India</option>
+          <option value="Canada">Canada</option>
+        </select>
+      </div>
+
+      <!-- Register Button -->
+      <div class="form-group">
+        <button type="submit">Register</button>
+      </div>
+      
+    </form>
+
+    <!-- Login Link -->
+    <p>Already have an account? <a href="/login">Login here</a></p>
+  </div>
+</body>
+</html>
